@@ -16,8 +16,10 @@
   }
   &__nav ul {
     display: flex;
+    align-items: center;
     gap: 3rem;
-    li a {
+    li a,
+    i {
       color: $clr--dark;
       font-size: 18px;
     }
