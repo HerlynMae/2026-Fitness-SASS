@@ -1,0 +1,6 @@
+@use "../abstract/" as *;
+
+.location {
+  padding: 4rem 0;
+  @include centerAll;
+}

@@ -1,0 +1,25 @@
+@use "../abstract/" as *;
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem 0;
+  background-color: $clr--light;
+  &__wrapper {
+    @include between;
+  }
+  &__logo {
+    h4 {
+      font-size: clamp(1.5rem, 5vw, 1.25rem);
+      font-weight: 700;
+      color: $clr--dark;
+    }
+  }
+  &__nav ul {
+    display: flex;
+    gap: 3rem;
+    li a {
+      color: $clr--dark;
+      font-size: 18px;
+    }
+  }
+}

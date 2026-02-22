@@ -1,0 +1,41 @@
+@use "../abstract/" as *;
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  transition: 0.5s ease;
+  &.btn--light {
+    background-color: $clr--light;
+    color: $clr--dark;
+    border: 1px solid $clr--dark;
+    &:hover {
+      background-color: $clr--dark;
+      color: $clr--light;
+      border: 1px solid $clr--light;
+      transition: 0.5s ease;
+    }
+  }
+  &.btn--dark {
+    background-color: $clr--dark;
+    color: $clr--light;
+    border: 1px solid $clr--light;
+    &:hover {
+      background-color: $clr--light;
+      color: $clr--dark;
+      border: 1px solid $clr--dark;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+.btn--text {
+  color: $clr--light;
+  transition: 0.5s ease;
+}
+
+.List--button {
+  display: flex;
+  gap: 2rem;
+}
